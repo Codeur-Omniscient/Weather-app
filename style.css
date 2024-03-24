@@ -117,3 +117,15 @@ body {
   outline: none;
   box-shadow: 0 0 0 0.5rem rgba(187, 187, 187, 0.802);
 }
+
+.btn {
+  padding: 1.5rem 2.6rem;
+  color: #fff;
+  background: linear-gradient(
+    25deg,
+    rgba(144, 217, 224, 0.6),
+    rgba(84, 96, 230, 0.6)
+  );
+  border: none;
+  border-radius: 6px;
+}
