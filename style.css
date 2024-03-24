@@ -6,14 +6,19 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   font-size: 10px;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #1e1e1e;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .container {
@@ -24,12 +29,17 @@ body {
 }
 
 .app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 85rem;
   height: 52.5rem;
   background-color: #222831;
 }
 
 .display-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 35rem;
   height: 100%;
   padding: 2.4rem;
@@ -48,4 +58,17 @@ body {
 /* Forecast style */
 
 .forecast-box {
+  padding: 1.8rem;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-block-end: 3.2rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
 }
