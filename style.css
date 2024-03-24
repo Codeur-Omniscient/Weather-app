@@ -11,3 +11,40 @@ html {
   line-height: 1;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-color: #aaa;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block-start: 12rem;
+}
+
+.app-container {
+  width: 85rem;
+  height: 52.5rem;
+  background-color: #222831;
+}
+
+.search-box {
+  max-width: 35rem;
+  height: 100%;
+  padding: 2.4rem;
+  border-radius: 8px;
+  background: linear-gradient(
+      120deg,
+      rgba(136, 236, 239, 0.4),
+      rgba(83, 90, 230, 0.4)
+    ),
+    url("image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Forecast style */
+
+.forecast-box {
+}
