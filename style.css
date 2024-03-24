@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: #1e1e1e;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
 }
 
@@ -35,14 +35,14 @@ body {
   height: 52.5rem;
   background-color: #222831;
 }
-
+/* Display style */
 .display-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 35rem;
   height: 100%;
-  padding: 2.4rem;
+  padding: 2.4rem 2.4rem 4.8rem 2.4rem;
   border-radius: 8px;
   background: linear-gradient(
       120deg,
@@ -55,13 +55,55 @@ body {
   transform: scale(1.1);
 }
 
+.day-text {
+  font-size: 3.7rem;
+  font-weight: bold;
+  margin-block-end: 1rem;
+}
+
+.date-time {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-block-end: 1rem;
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.display-footer {
+  max-width: max-content;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  margin-block-end: 0.8rem;
+}
+
+.temperature {
+  font-size: 3.7rem;
+  font-weight: bold;
+  margin-block-end: 0.8rem;
+}
+
+.time {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 /* Forecast style */
 
 .forecast-box {
-  padding: 1.8rem;
+  padding-block: 2.2rem;
+  padding-inline-end: 2.4rem;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .ul-list {
@@ -73,6 +115,8 @@ body {
 .list-item {
   display: flex;
   justify-content: space-between;
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 
 .day-list {
@@ -86,6 +130,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
   padding: 1.7rem;
   border-radius: 10px;
   gap: 2.2rem;
@@ -93,7 +139,8 @@ body {
 
 .day-list-item.active {
   background-color: #fff;
-  color: #1e1e1e;
+  color: #000;
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.27);
 }
 
 .search-box {
@@ -128,4 +175,11 @@ body {
   );
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: rgba(144, 217, 224, 0.6);
+  box-shadow: 0 0 10px 2px rgba(144, 217, 224, 0.6);
 }
